@@ -18,7 +18,7 @@ async function postPredictHandler(request, h) {
     createdAt: createdAt,
   };
 
-  // await storeData(id, data);
+  await storeData(id, data);
 
   const response = h.response({
     status: "success",
